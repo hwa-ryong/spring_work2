@@ -1,0 +1,7 @@
+package aaa.model;
+
+public class OrderProduct {
+	
+	String name;
+	int price;
+}

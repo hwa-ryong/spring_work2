@@ -1,0 +1,22 @@
+package aaa.model;
+
+import lombok.Data;
+
+@Data
+public class CoffeeProduct {
+   
+   String cname;
+   int cup, price, sum;
+   
+   public int getSum() {
+      sum = cup * price;
+      return sum;
+   }
+   
+   public int getAvg() {
+      avg = sum / 3;
+      return avg;
+   }
+   
+   
+}

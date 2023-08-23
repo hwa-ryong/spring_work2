@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>req/studentForm</title>
+</head>
+<body>
+<h1>req/studentForm</h1>
+<form action="" method="post">
+   <table border="">
+      <tr>
+         <td>커피</td>
+         <td>잔수</td>
+         <td>금액</td>
+      </tr>
+      <tr>
+         <td><input type="text" th:name="${'std[' + st + '].pname'}" th:value="${'학생' + st}"/></td>
+         <td><input type="text" th:name="${'arr[' + st + '].class1'}" th:value="${'반' + st}"/></td>
+         <td><input type="text" th:name="|std[${st}].kor|" th:value="${st}*10+2"/></td>
+         <td><input type="text" th:name="|std[${st}].eng|" th:value="${st}*10+2"/></td>
+         <td><input type="text" th:name="|std[${st}].math|" th:value="${st}*10+2"/></td>
+      </tr>
+      <tr>
+         <td colspan="5" align="center">
+            <input type="submit" value="계산" />
+         </td>
+      </tr>
+   </table>
+</form>
+</body>
+</html>

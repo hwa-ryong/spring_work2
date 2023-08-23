@@ -1,0 +1,27 @@
+package aaa.model;
+
+import lombok.Data;
+
+@Data
+public class Person {
+	
+	String id;
+	int age;
+	boolean marriage;
+	
+	
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Person(String id, int age, boolean marriage) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.marriage = marriage;
+	}
+	
+	
+	
+}

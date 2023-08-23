@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>session/view</title>
+</head>
+<body>
+<h2>session/view</h2>
+pname:[[${pname}]]<br/>
+no:[[${no}]]<br/>
+arr:[[${arr}]]<br/>
+st:[[${st}]]<br/>
+</body>
+</html>

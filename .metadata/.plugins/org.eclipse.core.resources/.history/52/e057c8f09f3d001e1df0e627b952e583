@@ -1,0 +1,7 @@
+package aaa.model;
+
+public class OrderData {
+	
+	OrderAddr addr;
+	ArrayList<OrderProduct> arr;
+}

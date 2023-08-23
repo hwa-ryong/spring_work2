@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>thymeleaf/control</title>
+</head>
+<body>
+<h1>thymeleaf/control</h1>
+<th:block th:with="a=30">
+a:[[${a}]]<br/>	
+</th:block>
+</body>
+</html>

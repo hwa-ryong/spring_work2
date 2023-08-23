@@ -1,0 +1,10 @@
+package aop_p.webToon;
+
+public class Rice {
+	
+	public String gimchi() {
+		System.out.println("김치찌개");
+		return "김치";
+	}
+	
+}

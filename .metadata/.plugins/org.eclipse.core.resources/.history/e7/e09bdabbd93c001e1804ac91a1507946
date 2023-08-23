@@ -1,0 +1,13 @@
+package aop_p.webToon;
+
+public class Order {
+	
+	int cnt;
+	
+	void add(Rice rc) {
+		
+		cnt ++;
+	}
+
+	
+}

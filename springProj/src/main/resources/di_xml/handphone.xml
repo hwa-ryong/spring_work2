@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	
+	<bean class="di_p.HandPhone" name="hp1" autowire="byType" 
+		p:name="어른폰" p:cam-ref="cam1" p:bat-ref="bat1"  p:dis-ref="dis1"/>
+			
+	<bean class="di_p.HandPhone" name="hp2" autowire="byName" 
+		p:name="은하수폰" p:cam-ref="cam1" p:bat-ref="bat1" p:dis-ref="dis3"/>
+		
+	<!-- 카메라 -->
+	<bean class="di_p.Camera" name="cam1" p:name="카메라" p:pixel="1024" />
+	 
+	<!-- 배터리 -->
+	<bean class="di_p.Battery" name="bat1" p:name="배터리" p:capacity="4500" />		
+	
+	<!-- 액정 -->
+	<bean class="di_p.Display" name="dis1" p:name="핸드폰 액정" p:size="800" />
+	<bean class="di_p.Display" name="dis2" p:name="노트북 액정" p:size="2000" />
+	<bean class="di_p.Display" name="dis3" p:name="PC 액정" p:size="4000" />
+	
+</beans>
+

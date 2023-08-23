@@ -1,0 +1,8 @@
+package aaa;
+
+public class BBB {
+	
+	String name;
+	int age;
+	boolean marriage;
+}

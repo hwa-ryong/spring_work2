@@ -1,0 +1,22 @@
+package aop_p.webToon;
+
+public class Stew {
+	String name, kind;
+	int count;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setKind(String kind) {
+		this.kind = kind;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}	
+	@Override
+	public String toString() {
+		return "Stew [name=" + name + ", kind=" + kind + ", count=" + count + "]";
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyme">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>request/attr</h1>
+age:[[${age}]]<br/>
+pname:[[${pname}]]<br/>
+jum:[[${jum}]]<br/>
+now:[[${now}]]<br/>
+</body>
+</html>

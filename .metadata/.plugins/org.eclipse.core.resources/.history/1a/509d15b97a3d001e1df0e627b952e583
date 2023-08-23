@@ -1,0 +1,10 @@
+package aaa.model;
+
+public class Person {
+	
+	String pname, gender;
+	boolean mil;
+	
+	
+	
+}

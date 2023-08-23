@@ -1,0 +1,16 @@
+package aaa.model;
+
+import lombok.Data;
+
+@Data
+public class CoffeeProduct {
+   
+   String cname1;
+   int cup1, price1, sum;
+   
+   public int getSum() {
+      sum = cup1 * price1;
+      return sum;
+   }
+   
+}

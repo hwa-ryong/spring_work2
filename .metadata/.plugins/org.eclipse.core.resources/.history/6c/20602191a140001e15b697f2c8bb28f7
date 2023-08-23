@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 쿠키 생성</title>
+</head>
+<body>
+<h2>로그인 쿠키 생성</h2>
+<tr>
+	<td>아이디</td>
+	<td><input type="text" name="id" /></td>
+</tr>
+<tr>
+	<td>비밀번호</td>
+	<td><input type="text" name="pw" /></td>
+</tr>
+</body>
+</html>

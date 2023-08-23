@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>req/coffeeReg</title>
+</head>
+<body>
+<h1>req/coffeeReg</h1>
+<table border="">
+      <tr>
+         <td>커피</td>
+         <td>잔수</td>
+         <td>금액</td>
+         <td>합계</td>
+      </tr>
+      <tr th:each="cc : ${coffeeData.cp}">
+         <td>[[${cc.cname}]]</td>
+         <td>[[${cc.cup}]]</td>
+         <td>[[${cc.price}]]</td>
+         <td>[[${cc.sum}]]</td>
+      </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean class="di_p.Hambuger" name="hb1">
+		<constructor-arg value="빅맥"/>
+		<constructor-arg value="550"/>
+		<constructor-arg value="6000"/>		
+	</bean>
+	
+	<bean class="di_p.Side" name="sd1">
+		<property name="name" value="감자튀김"/>
+		<property name="cal" value="311"/>
+		<property name="price" value="2000"/>
+	</bean>
+	
+	<bean class="di_p.Drink" name="dr1">
+		<property name="name" value="콜라"/>
+		<property name="cal" value="133"/>
+		<property name="price" value="2200"/>
+		<property name="ice" value="0"/>
+	</bean>
+	
+	<bean class="di_p.HambugerSet" name="hs1">
+		<constructor-arg  ref="hb1"/>
+		<constructor-arg  ref="sd1"/>
+		<constructor-arg  ref="dr1"/>
+	</bean>
+	
+	
+	
+	<bean class="di_p.Bicycle" name="b2">
+		<property name = "name">
+			<value>세발자전거</value>
+		</property>
+		
+		<property name = "wheel">
+				<ref bean="w2"/>
+		</property>
+		
+		<property name = "wheel2">
+				<ref bean="w3"/>
+		</property>
+		
+		<property name = "wheel3">
+				<ref bean="w4"/>
+		</property>
+			
+		<property name = "handle">
+				<ref bean="h2"/>
+		</property>
+	</bean>
+	
+
+	<bean class="di_p.Wheel" name="w2">
+		
+		<property name="name" value="앞바퀴"/>
+		
+	</bean>
+	
+	<bean class="di_p.Wheel" name="w3">
+		
+		<property name="name" value="뒷바퀴1"/>
+		
+	</bean>
+	
+	<bean class="di_p.Wheel" name="w4">
+		
+		<property name="name" value="뒷바퀴2"/>
+		
+	</bean>
+	
+	
+	<bean class="di_p.Handle" name="h2">
+		
+		<property name="name" value="핸들"/>
+
+	</bean>	
+	
+	
+	
+	
+	<bean class="di_p.Bicycle" name="pocari1">
+		<property name = "name">
+			<value>포카리자전거</value>
+		</property>
+		
+		<property name = "wheel">
+				<ref bean="w5"/>
+		</property>
+		
+		<property name = "wheel2">
+				<ref bean="w6"/>
+		</property>
+		
+		<property name = "handle">
+				<ref bean="h3"/>
+		</property>
+		
+		<property name = "basket">
+				<ref bean="bk3"/>
+		</property>
+	</bean>
+	
+	<bean class="di_p.Wheel" name="w5">
+		
+		<property name="name" value="앞바퀴"/>
+		
+		
+	</bean>
+	
+	<bean class="di_p.Wheel" name="w6">
+		
+		<property name="name" value="뒷바퀴1"/>
+		
+		
+	</bean>
+	
+	<bean class="di_p.Handle" name="h3">
+		
+		<property name="name" value="핸들"/>
+
+	</bean>	
+	
+	<bean class="di_p.Basket" name="bk3">
+		
+		<property name="name" value="바구니"/>
+
+	</bean>	
+	
+	
+	<bean class="di_p.Bicycle" name="mtb1">
+		<property name = "name">
+			<value>MTB</value>
+		</property>
+		
+		<property name = "wheel">
+				<ref bean="w8"/>
+		</property>
+		
+		<property name = "wheel3">
+				<ref bean="w9"/>
+		</property>
+			
+		<property name = "handle">
+				<ref bean="h4"/>
+		</property>
+	</bean>
+	
+
+	<bean class="di_p.Wheel" name="w8">
+		
+		<property name="name" value="앞바퀴"/>
+		
+		
+	</bean>
+	
+	<bean class="di_p.Wheel" name="w9">
+		
+		<property name="name" value="뒷바퀴2"/>
+		
+		
+	</bean>
+	
+	<bean class="di_p.Handle" name="h4">
+		
+		<property name="name" value="핸들"/>
+
+	</bean>	
+	
+	
+	
+				
+</beans>
+

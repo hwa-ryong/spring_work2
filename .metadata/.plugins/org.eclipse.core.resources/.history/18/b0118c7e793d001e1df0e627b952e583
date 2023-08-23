@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>attr</title>
+</head>
+<body>
+<h1>request/attr</h1>
+age:[[${age}]]<br/>
+pname:[[${pname}]]<br/>
+jum:[[${jum}]]<br/>
+<th:block th:each="j:${jum}">
+	[[${i}]]
+	
+	
+</th:block>
+
+
+
+now:[[${now}]]<br/>
+</body>
+</html>

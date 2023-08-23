@@ -1,0 +1,20 @@
+package aaa.model;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class SeasonMain {
+	
+	HashMap<String, String[]>data;
+	
+	public SeasonMain() {
+		data = new HashMap<>();
+		
+		data.put("spring","sp1.jpg,sp2.jpg,sp3.jpg".split(","));
+		data.put("summer","".split(","));
+		data.put("autumn","".split(","));
+		data.put("winter","".split(","));
+	}
+}

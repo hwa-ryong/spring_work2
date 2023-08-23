@@ -1,0 +1,19 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("thyme")
+public class ThymeleafController {
+
+	@RequestMapping("calc")
+	String calc() {
+		return "thyme/calc";
+	}
+	
+	@RequestMapping("control")
+	String control() {
+		return "thyme/control";
+	}
+}

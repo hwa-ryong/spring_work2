@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커피</title>
+</head>
+<body>
+		<tr>
+			<td>커피이름</td>
+			<td><input type="text" name="cname" /></td>
+		</tr>
+		<tr>
+			<td>잔수</td>
+			<td><input type="text" name="cup" /></td>
+		</tr>
+		<tr>
+			<td>가격</td>
+			<td><input type="text" name="price" /></td>
+		</tr>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	
+	<bean class="di_p.Student" name="std1">
+		<constructor-arg value="원빈" />
+		<constructor-arg name="arr">
+			<array>
+				<value>70</value>
+				<value>80</value>
+				<value>90</value>
+			</array>
+		</constructor-arg>
+	</bean>
+		
+	<bean class="di_p.Student" name="std2">	
+		<constructor-arg value="현빈" />
+		<constructor-arg name="arr">
+			<array>
+				<value>80</value>
+				<value>100</value>
+				<value>95</value>
+			</array>
+		</constructor-arg>
+	</bean>
+		
+	<bean class="di_p.Student" name="std3">	
+		<constructor-arg value="김우빈" />
+		<constructor-arg name="arr">
+			<array>
+				<value>85</value>
+				<value>85</value>
+				<value>95</value>
+			</array>
+		</constructor-arg>
+	</bean>
+		
+	<bean class="di_p.Student" name="std4">	
+		<constructor-arg value="장희빈" />
+		<constructor-arg name="arr">
+			<array>
+				<value>77</value>
+				<value>65</value>
+				<value>78</value>
+			</array>
+		</constructor-arg>
+	</bean>
+		
+	<bean class="di_p.Student" name="std5">	
+		<constructor-arg value="미스터빈" />
+		<constructor-arg name="arr">
+			<array>
+				<value>52</value>
+				<value>62</value>
+				<value>73</value>
+			</array>
+		</constructor-arg>
+	</bean>
+	
+	<!-- 
+	<bean class="di_p.Student" name="std2">
+		<property name="name" value="현빈"></property>
+		<property name="arr2">
+			<array>
+				<value>55</value>
+				<value>65</value>
+				<value>100</value>
+			</array>
+		</property>
+		<property name="tot" value="합계"></property>
+		<property name="avg" value="평균"></property>
+	</bean>
+		
+	<bean class="di_p.Student" name="std3">
+		<property name="name" value="김우빈"></property>
+		<property name="arr3">
+			<array>
+				<value>90</value>
+				<value>90</value>
+				<value>100</value>
+			</array>
+		</property>
+		<property name="tot" value="합계"></property>
+		<property name="avg" value="평균"></property>
+	</bean>
+	
+	<bean class="di_p.Student" name="std4">	
+		<property name="name" value="장희빈"></property>
+		<property name="arr4">
+			<array>
+				<value>85</value>
+				<value>80</value>
+				<value>80</value>
+			</array>
+		</property>
+		<property name="tot" value="합계"></property>
+		<property name="avg" value="평균"></property>
+	</bean>
+		
+	<bean class="di_p.Student" name="std5">		
+		<property name="name" value="미스터빈"></property>
+		<property name="arr5">
+			<array>
+				<value>95</value>
+				<value>90</value>
+				<value>90</value>
+			</array>
+		</property>
+		<property name="tot" value="합계"></property>
+		<property name="avg" value="평균"></property>
+	</bean>
+	-->
+		
+</beans>
+

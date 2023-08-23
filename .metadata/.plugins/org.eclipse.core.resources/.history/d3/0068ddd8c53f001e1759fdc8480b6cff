@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>req/studentReg</title>
+</head>
+<body>
+<h1>req/studentReg</h1>
+<table border="">
+      <tr>
+         <td>커피</td>
+         <td>잔수</td>
+         <td>금액</td>
+         <td>합계</td>
+      </tr>
+      <tr th:each="sd : ${studentData.std}">
+         <td>[[${sd.pname}]]</td>
+         <td>[[${sd.class1}]]</td>
+         <td>[[${sd.kor}]]</td>
+      </tr>
+</table>
+</body>
+</html>

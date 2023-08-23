@@ -1,0 +1,22 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import aaa.model.OrderData;
+
+@Controller
+@RequestMapping("session")
+public class SessionController {
+	
+	@RequestMapping("make1")
+	@ResponseBody
+	String make1(HttpSession session) {
+		return "세션 설정1";
+	}
+	
+	
+}

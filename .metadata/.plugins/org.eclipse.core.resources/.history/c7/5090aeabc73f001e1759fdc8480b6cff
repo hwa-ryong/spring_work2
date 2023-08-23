@@ -1,0 +1,38 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import aaa.model.CoffeeData;
+import aaa.model.OrderData;
+import aaa.model.StudentData;
+
+@Controller
+@RequestMapping("request/coffee")
+public class CoffeeController {
+   
+   @GetMapping
+   String studentForm() {
+      return "req/coffeeForm";
+   }
+   
+   @PostMapping
+   String studentReg(CoffeeData cd) {
+      System.out.println(cd);
+      return "req/coffeeReg";
+   }
+   
+   @RequestMapping("coffee1")
+	String coffee1(
+			@RequestParam(value = "cname1", required = false, defaultValue = "coffee") String cname,
+			@RequestParam(value = "cup1", defaultValue = "1") int cup,
+			@RequestParam(value = "price1", defaultValue = "1500") int price) {
+		// param 이 없을 경우 에러 발생
+		System.out.println("커피이름 : "+cname+ ", 잔수 : "+cup+ ", 금액 : "+price);
+		return "req/coffee";
+	}
+  
+}

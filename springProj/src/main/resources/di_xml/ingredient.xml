@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.springframework.org/schema/beans"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	
+	<bean class="di_p.Menu" name="breakfast1">
+		<constructor-arg value="라면" />
+		<constructor-arg value="1500" />
+	</bean>
+	
+	<bean class="di_p.Menu" name="lunch1">
+		<constructor-arg value="순대 국밥" />
+		<constructor-arg value="9000" />
+	</bean>
+	
+	<bean class="di_p.Menu" name="dinner1">
+		<constructor-arg value="삼겹살" />
+		<constructor-arg value="13000" />
+	</bean>
+				
+</beans>
+

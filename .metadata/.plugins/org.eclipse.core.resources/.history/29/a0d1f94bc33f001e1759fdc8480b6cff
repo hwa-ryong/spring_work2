@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커피</title>
+</head>
+<body>
+		<tr>
+			<td>커피 : [[${cname}]]</td>
+		</tr>
+		<tr>
+			<td>잔수</td>
+		</tr>
+		<tr>
+			<td>가격</td>
+		</tr>
+</body>
+</html>

@@ -1,0 +1,24 @@
+package aop_p.webToon;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Rice {
+	
+	public String Bob1() {
+		System.out.println("제육덮밥");
+		return "제육덮밥";
+	}
+	
+	public String Bob2() {
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Rice [name=" + name + ", kind=" + kind + "]";
+	}
+	
+	
+	
+}
