@@ -1,0 +1,27 @@
+package aaa.model;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BanMain {
+	
+	//2중 배열 느낌
+	HashMap<String, String[]>data;
+	
+	public BanMain() {
+		data = new HashMap<>();
+		
+		data.put("ban1","장동건,장서건,장남건,김동현,이동현,박동현,김찬호,박찬호".split(","));
+		data.put("ban2","김남주,서희원,박해진,김슬기,이슬기,박지은,강하늘".split(","));
+		data.put("ban3","3화룡,4화룡,5화룡,6화룡".split(","));
+		data.put("ban4","김혁,이혁,박혁".split(","));
+	}
+	
+	public String [] getName(String name) {
+		return data.get(name);
+	}
+	
+	
+}

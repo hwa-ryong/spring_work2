@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="anno_p.com.Bonche"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="anno_p.com.sub2.Bean"/>
     <fullyQualifiedTypeName name="anno_p.com.sub1.Water"/>
     <fullyQualifiedTypeName name="anno_p.com.sub2.BeanBean"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="aaa.model.MenuData"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="aaa.model.BanMain"/>
+    <fullyQualifiedTypeName name="aaa.model.BanData"/>
 </qualifiedTypeNameHistroy>
