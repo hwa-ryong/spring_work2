@@ -1,0 +1,15 @@
+package aaa.model;
+
+import jakarta.validation.constraints.NotEmpty;
+
+public class JoinData {
+	
+	@NotEmpty(message = "아이디가 없오")
+	String pid;
+	String pname;
+	String pw1;
+	String pw2;
+	String email;
+	String phone;
+	int age;
+}

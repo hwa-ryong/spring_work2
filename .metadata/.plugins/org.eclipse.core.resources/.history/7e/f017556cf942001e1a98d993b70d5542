@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티</title>
+<link rel="stylesheet" href="css/css.css" /> 
+</head>
+<body>
+	<section class="container">
+		<div class="wrapped">
+			<div role="main" class="contents">
+				<h1 class="blind">토픽 리스트</h1>
+				<div class="top_banner">
+					<div class="adwrap add_adop">
+						<div class="is_web">
+							
+						</div>
+					</div>
+				</div>
+				<div class="wrap-category"></div>
+				<div class="wrap-category-pc"></div>
+				<div class="article-list hr addnewstyle">
+					<h2 class="blind">채용 전체 토픽 리스트</h2>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-dday">마감 D-36</span>
+								<span class="tag-yoe">경력(10~20년)</span>
+							</p>
+							<h3><a>세일즈 매니저 채용</a></h3>
+							<span class="category">
+								<a>서울 서초구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-always">상시 채용</span>
+								<span class="tag-yoe">경력(3~10년)</span>
+							</p>
+							<h3><a>[피플펀드] 금융기관 세일즈 매니저</a></h3>
+							<span class="category">
+								<a>피플펀드컴퍼니 서울 서초구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-always">상시 채용</span>
+								<span class="tag-yoe">경력(3~10년)</span>
+							</p>
+							<h3><a>IT QA</a></h3>
+							<span class="category">
+								<a>물류 전문 IT 솔루션 기업 - 경기 성남시 분당구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+				</div>
+				<div class="infinite-loading-container"></div>
+				<span class="none_result" style="display: none;">
+					<div class="result-none">
+						<p>등록된 채용 공고가 없습니다.</p>
+					</div>
+				</span>			
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,11 @@
+package aaa.model;
+
+import lombok.Data;
+
+@Data
+public class MemData {
+	
+	String pid = "asdf", pname="차은우";
+	
+	boolean mil = false;
+}

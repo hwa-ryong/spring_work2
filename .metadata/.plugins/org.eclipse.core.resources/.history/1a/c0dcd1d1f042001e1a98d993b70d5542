@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티</title>
+</head>
+<body>
+	<section class="container">
+		<div class="wrapped">
+			<div role="main" class="contents">
+				<h1 class="blind">토픽 리스트</h1>
+				<div class="top_banner">
+					<div class="adwrap add_adop">
+						<div class="is_web">
+							
+						</div>
+					</div>
+				</div>
+				<div class="wrap-category"></div>
+				<div class="wrap-category-pc"></div>
+				<div class="article-list hr addnewstyle"></div>
+				<div data-v-644ea9c9 class="top_banner"></div>
+				<span class="none_result" style="display: none;"></span>			
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,17 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import aaa.model.MemData;
+import aaa.model.MemData2;
+
+@Controller
+@RequestMapping("/form")
+public class FormController2 {
+
+	@RequestMapping("form")
+	String form(MemData2 md2) {
+		return "form/form2";
+	}
+}

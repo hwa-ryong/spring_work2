@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티</title>
+<style>
+	#wrap.wrap-list .container .wrapped {
+		padding-top: 32px;
+	}
+	
+	.container .wrapped {
+		display: flex;
+		max-width: 1140px;
+		box-sizing: border-box;
+		margin:0 auto;
+	}
+	
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, form, fieldset, legend, textarea, input, select, textarea, button, img, pre {
+		color: #222;
+		font-size: 14px;
+		font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+		line-height: 1.25em;
+		word-wrap: break-word;
+	}
+	
+	#wrap.wrap-list .container .contents {
+		width: 100%;
+	}
+	
+	.contents {
+		min-height: 800px;
+	}
+	
+	body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, form, fieldset, legend, textarea, input, select, textarea, button, img, pre {
+		margin: 0;
+		padding: 0;
+		color: #222;
+		font-size: 14px;
+		font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+		line-height: 1.25em;
+		word-wrap: break-word;
+	}
+	div {
+		display: block;
+	}
+	
+</style>
+</head>
+<body>
+	<section class="container">
+		<div class="wrapped">
+			<div role="main" class="contents">
+				<h1 class="blind">토픽 리스트</h1>
+				<div class="top_banner">
+					<div class="adwrap add_adop">
+						<div class="is_web">
+							
+						</div>
+					</div>
+				</div>
+				<div class="wrap-category"></div>
+				<div class="wrap-category-pc"></div>
+				<div class="article-list hr addnewstyle">
+					<h2 class="blind">채용 전체 토픽 리스트</h2>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-always">상시 채용</span>
+								<span class="tag-yoe">경력(3~10년)</span>
+							</p>
+							<h3><a>[피플펀드] 금융기관 세일즈 매니저</a></h3>
+							<span class="category">
+								<a>피플펀드컴퍼니 서울 서초구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-always">상시 채용</span>
+								<span class="tag-yoe">경력(3~10년)</span>
+							</p>
+							<h3><a>[피플펀드] 금융기관 세일즈 매니저</a></h3>
+							<span class="category">
+								<a>피플펀드컴퍼니 서울 서초구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+					<div class="article-list-pre">
+						<div class="tit">
+							<p class="show-tag">
+								<span class="tag-always">상시 채용</span>
+								<span class="tag-yoe">경력(3~10년)</span>
+							</p>
+							<h3><a>[피플펀드] 금융기관 세일즈 매니저</a></h3>
+							<span class="category">
+								<a>피플펀드컴퍼니 서울 서초구</a>
+							</span>
+						</div>
+						<div class="tag-hr"></div>
+					</div>
+				</div>
+				<div class="infinite-loading-container"></div>
+				<span class="none_result" style="display: none;"></span>			
+			</div>
+		</div>
+	</section>
+</body>
+</html>

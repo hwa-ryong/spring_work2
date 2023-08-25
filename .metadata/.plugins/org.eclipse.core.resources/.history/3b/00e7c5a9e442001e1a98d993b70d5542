@@ -1,0 +1,23 @@
+package aaa.model;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import lombok.Data;
+
+@Data
+public class MemData {
+	
+	String pid = "asdf", pname="차은우", gender="남";
+	
+	boolean mil = true;
+	
+	String [] genders = {"남","여","it인"};
+	
+	public List<MenuData> getHobbys() {
+		List<MenuData> res = new ArrayList<>();
+		
+		res.add(new MenuData("coding","코딩하기"));
+	}
+}

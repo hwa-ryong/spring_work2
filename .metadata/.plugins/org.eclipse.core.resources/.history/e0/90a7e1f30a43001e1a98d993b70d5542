@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>validForm</title>
+</head>
+<body>
+<h1>validForm</h1>
+
+<form method="post" th:object="${joinData}">
+	<table border="">
+		<tr>
+			<td>id</td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="가입" />
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

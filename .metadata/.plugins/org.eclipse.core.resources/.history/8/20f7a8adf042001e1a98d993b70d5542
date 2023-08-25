@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커뮤니티</title>
+</head>
+<body>
+	<section class="container">
+		<div class="wrapped">
+			<div role="main" class="contents">
+				<h1 class="blind">토픽 리스트</h1>
+				<div class="top_banner">
+					<div class="adwrap add_adop">
+						<div class="is_web">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

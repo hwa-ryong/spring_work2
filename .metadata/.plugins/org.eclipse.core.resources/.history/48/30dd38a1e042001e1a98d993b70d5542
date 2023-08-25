@@ -1,0 +1,13 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/form")
+public class FormController {
+	
+	String form(MemData md) {
+		
+	}
+}

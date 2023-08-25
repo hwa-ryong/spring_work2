@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>validForm</title>
+</head>
+<body>
+<h1>validForm</h1>
+
+<form method="post" th:object="${joinData}">
+	<table border="">
+		<tr>
+			<td>id</td>
+			<td><input type="text" th:field="*{id}" /></td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" th:field="*{pname}"/></td>
+		</tr>
+		<tr>
+			<td>암호</td>
+			<td><input type="text" th:field="*{pw1}"/></td>
+		</tr>
+		<tr>
+			<td>암호확인</td>
+			<td><input type="text" th:field="*{pw2}"/></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type="text" th:field="*{email}"/></td>
+		</tr>
+		<tr>
+			<td>전화번호</td>
+			<td><input type="text" th:field="*{phone}"/></td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td><input type="text" th:field="*{age}"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="가입" />
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

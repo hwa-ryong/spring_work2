@@ -1,0 +1,16 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import aaa.model.Blind;
+
+@Controller
+@RequestMapping("/blind")
+public class BlindController {
+	
+	@RequestMapping("blind")
+	String form2(Blind bl) {
+		return "form/form2";
+	}
+}

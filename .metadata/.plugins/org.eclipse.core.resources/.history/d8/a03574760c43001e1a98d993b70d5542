@@ -1,0 +1,22 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import aaa.model.JoinData;
+
+@Controller
+@RequestMapping("/form")
+public class ValidController {
+	
+	@GetMapping("validation")
+	String validForm(JoinData jd) {
+		return "form/validForm";
+	}
+	
+	@GetMapping("valiReg")
+	String validReg(JoinData jd) {
+		return "form/validForm";
+	}
+}

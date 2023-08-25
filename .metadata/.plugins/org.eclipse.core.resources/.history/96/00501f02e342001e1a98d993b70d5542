@@ -1,0 +1,13 @@
+package aaa.model;
+
+import lombok.Data;
+
+@Data
+public class MemData {
+	
+	String pid = "asdf", pname="차은우", gender="남";
+	
+	boolean mil = false;
+	
+	String [] genders = {"남","여","it인"};
+}

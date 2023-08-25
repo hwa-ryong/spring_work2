@@ -1,0 +1,14 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/form")
+public class ValidController {
+	
+	@GetMapping("validation")
+	String validForm() {
+		return "form/validForm";
+	}
+}

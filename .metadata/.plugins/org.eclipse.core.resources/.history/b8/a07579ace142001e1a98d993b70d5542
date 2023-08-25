@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>form/form</title>
+</head>
+<body>
+<h1>form/form</h1>
+<form action="" method="post">
+	<table border="">
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" name="" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

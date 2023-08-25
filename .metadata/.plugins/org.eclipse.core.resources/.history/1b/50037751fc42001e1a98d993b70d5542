@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form/link</title>
+</head>
+<body>
+<h2>form/link</h2>
+<a href="aaa">aaa</a>
+<a th:href="@{bbb}">bbb</a>
+</body>
+</html>
