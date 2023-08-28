@@ -1,0 +1,15 @@
+package aaa.service;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
+
+import aaa.model.BoardDTO;
+
+
+@Service
+public interface BoardService {
+	List<BoardDTO> getBoardListWithPaging(int pageNum, int pageSize);
+	int getTotalBoardCount();
+}

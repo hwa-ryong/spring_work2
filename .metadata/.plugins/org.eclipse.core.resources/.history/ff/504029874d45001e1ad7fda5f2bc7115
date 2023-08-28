@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+<meta charset="UTF-8">
+<title>board/detail</title>
+</head>
+<body>
+<h1>board/detail</h1>
+
+<table border="">
+	<tr>
+		<td>id</td><td th:text="${dto.id}" />
+		<td>제목</td><td th:text="${dto.title}" />
+		<td>작성자</td>
+		<td>등록일</td>
+		<td>조회수</td>
+	</tr>
+	<tr th:each="dto, dtoStat : ${mainData}">
+		
+		</a>
+		</td>
+		<td th:text="${dto.pname}" />
+		<td th:text="${dto.regDate}" />
+		<td th:text="${dto.cnt}" />
+	</tr>
+	<tr>
+		<td colspan="5" align="right">
+			<a href="insert">글쓰기</a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>board/insertForm</title>
+</head>
+<body>
+<h1>board/insertForm</h1>
+<form method="post" enctype="multipart/form-data" th:object="${boardDTO}">
+	<table>
+		<tr>
+			<td>제목</td>
+			<td><input type="text" th:field="*{title}" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

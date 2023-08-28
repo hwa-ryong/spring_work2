@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>board/deleteForm</title>
+</head>
+<body>
+board/deleteForm
+<form method="post" th:object="boardDTO">
+	<table border="">
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

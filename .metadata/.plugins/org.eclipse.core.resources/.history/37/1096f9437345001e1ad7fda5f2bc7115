@@ -1,0 +1,10 @@
+package aaa.service;
+
+import java.util.List;
+
+import aaa.model.BoardDTO;
+
+public interface BoardService {
+	List<BoardDTO> getBoardListWithPaging(int pageNum, int pageSize);
+	int getTotalBoardCount();
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>board/deleteForm</title>
+</head>
+<body>
+board/deleteForm
+<form method="post" th:object="boardDTO">
+	<input type="hidden" th:field="*{id}"/>
+	<table border="">
+		<tr>
+			<td>암호</td>
+			<td><input type="text" th:field="*{pw}"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="text" /></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

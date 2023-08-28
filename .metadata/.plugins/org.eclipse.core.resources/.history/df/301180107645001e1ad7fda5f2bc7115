@@ -1,0 +1,16 @@
+package aaa.service;
+
+import java.util.List;
+
+import aaa.model.BoardDTO;
+import lombok.Data;
+
+@Data
+public abstract class BoardService {
+	
+	public abstract List<BoardDTO> getBoardListWithPaging(int pageNum, int pageSize);
+		
+    public abstract int getTotalBoardCount();
+		
+	
+}

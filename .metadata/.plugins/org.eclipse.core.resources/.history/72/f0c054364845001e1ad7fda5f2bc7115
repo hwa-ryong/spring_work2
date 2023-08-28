@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="aaa.service.BoardMapper">
+	
+	<select id="list" resultType = "aaa.model.BoardDTO">
+		select * from board
+	</select>
+
+</mapper>

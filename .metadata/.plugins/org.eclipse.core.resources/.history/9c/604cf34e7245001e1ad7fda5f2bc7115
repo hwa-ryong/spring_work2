@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>board/list</title>
+</head>
+<body>
+<h1>board/list</h1>
+
+<table border="">
+	<tr>
+		<td>번호</td>
+		<td>제목</td>
+		<td>작성자</td>
+		<td>등록일</td>
+		<td>조회수</td>
+	</tr>
+	<tr th:each="dto, dtoStat : ${mainData}">
+		<td th:text="${dtoStat.count}" />
+		<td>
+			<a th:href="|detail/${dto.id}|" th:text="${dto.title}"></a>
+		</td>
+		<td th:text="${dto.pname}" />
+		<td th:text="${dto.regDate}" />
+		<td th:text="${dto.cnt}" />
+	</tr>
+	<tr>
+		<td colspan="5" align="right">
+			<a href="insert">글쓰기</a>
+		</td>
+	</tr>
+</table>
+
+<div class="pagination">
+	<ul>
+		<li th:if="${currentPage > 1}">
+			<a th:href="@{|/board/list?page=${currentPage - 1}|}">&lt; 이전</a>
+		</li>
+		<li th:each="pageNumber : $[#numbers.sequence(1, totalPages)]">
+			<a th:href="@{|/board/list?page=${pageNumber}|}"
+			   th:classappend="${pageNumber == currentPage} ? 'active'">
+			   <span th:text="${pageNumber}"></span>
+		    </a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

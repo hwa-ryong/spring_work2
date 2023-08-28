@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>board/list</title>
+</head>
+<body>
+<h1>board/list</h1>
+
+<table border="">
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+</table>
+</body>
+</html>

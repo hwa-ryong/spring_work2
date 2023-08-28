@@ -1,0 +1,15 @@
+package aaa.service;
+
+import java.util.List;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
+
+import aaa.model.BoardDTO;
+
+
+@Service
+@Configuration
+public interface BoardService {
+	
+}

@@ -1,0 +1,7 @@
+package aaa.service;
+
+public class BoardService {
+	
+	List<BoardDTO> getBoardListWithPaging(int pageNum, int pageSize);
+    int getTotalBoardCount();
+}

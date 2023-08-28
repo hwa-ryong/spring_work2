@@ -1,6 +1,0 @@
-package aaa.model;
-
-public class CoffeeData {
-	
-	CoffeeProduct cp;
-}

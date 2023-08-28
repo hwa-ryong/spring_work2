@@ -1,0 +1,23 @@
+package aaa.service;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import aaa.model.BoardDTO;
+
+@Mapper
+public interface BoardMapper {
+	
+	List<BoardDTO> listWithPaging(@Param("offset") int offset, @Param("limit") int limit);
+	int getTotalBoardCount();
+	
+	BoardDTO detail(int id);
+	
+	int insseerr(BoardDTO dto);
+	
+	int delettt(BoardDTO dto);
+	
+	int modifffy(BoardDTO dto);
+}
