@@ -1,0 +1,56 @@
+package aaa.model;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.regex.Pattern;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class FileDown {
+	
+	void fileSave2(BoardDTO bd) {
+		
+		
+		if(bd.getFf2().isEmpty()) {
+			
+			
+			return;
+		}
+		
+		String path = "C:\\green_project\\spring_work\\stsMvcProj\\src\\main\\webapp\\up";
+		
+		int dot = ud.getFf2().getOriginalFilename().lastIndexOf(".");
+		String fDomain = ud.getFf2().getOriginalFilename().substring(0, dot);
+		String ext = ud.getFf2().getOriginalFilename().substring(dot);
+		
+		//이미지인지 확인
+		if(!Pattern.matches("[.](bmp|jpg|gif|png|jpeg)", ext.toLowerCase())) {
+			
+			ud.setMsg("이미지 파일이 아님");
+			return;
+		}
+		
+		ud.setFf2Name(fDomain+ext); 
+		File ff = new File(path+"\\"+ud.getFf2Name());
+		int cnt = 1;
+		while(ff.exists()) {
+			 
+			ud.setFf2Name(fDomain+"_"+cnt+ext);
+			ff = new File(path+"\\"+ud.getFf2Name());
+			cnt++;
+		}
+		
+		try {
+			FileOutputStream fos = new FileOutputStream(ff);
+			
+			fos.write(ud.getFf2().getBytes());
+			
+			fos.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
