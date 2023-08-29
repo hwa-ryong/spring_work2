@@ -3,15 +3,13 @@ package aaa.service;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import aaa.model.BoardDTO;
 
 @Mapper
 public interface BoardMapper {
-	
 
-	List<BoardDTO> list();
+	List<BoardDTO> list(BoardDTO dto);
 	
 	BoardDTO detail(int id);
 	
@@ -20,6 +18,11 @@ public interface BoardMapper {
 	int delettt(BoardDTO dto);
 	
 	int modifffy(BoardDTO dto);
-
+	
+	int listCnt();
+	
+	int maxId();
+	
 	void addCount(int id);
+	
 }
