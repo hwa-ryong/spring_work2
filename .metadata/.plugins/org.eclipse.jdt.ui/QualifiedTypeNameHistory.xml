@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
-    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterReturning"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
@@ -11,7 +9,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="aaa.model.Person2"/>
     <fullyQualifiedTypeName name="aaa.model.OrderData"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="aaa.model.CoffeeData"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
     <fullyQualifiedTypeName name="aaa.model.OrderAddr"/>
@@ -21,7 +18,6 @@
     <fullyQualifiedTypeName name="aaa.model.Member"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
     <fullyQualifiedTypeName name="aaa.model.MenuData"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="aaa.model.BanMain"/>
     <fullyQualifiedTypeName name="aaa.model.BanData"/>
@@ -48,7 +44,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="aaa.model.PageData"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
     <fullyQualifiedTypeName name="aaa.service.BoardService"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.awt.print.Pageable"/>
+    <fullyQualifiedTypeName name="aaa.model.PageData"/>
+    <fullyQualifiedTypeName name="aaa.model.FileDown"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

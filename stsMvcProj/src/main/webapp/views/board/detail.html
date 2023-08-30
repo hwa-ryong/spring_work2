@@ -23,9 +23,9 @@
 			
 			<td>파일</td>
 			<td >
-				<img th:if="${dto.img}" th:src="|/up/${dto.upfile}|"/>
+				<img width="400px" th:if="${dto.img}" th:src="|/up/${dto.upfile}|"/>
 				<a th:unless="${dto.img}" th:text="${dto.upfile}"
-				   th:href="|/board/download/${dto.upfile}|" >
+				   th:href="|/board/download/${dto.upfile}|" />
 			</td>
 		</tr>
 		<tr>

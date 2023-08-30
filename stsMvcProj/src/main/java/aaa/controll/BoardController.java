@@ -131,7 +131,7 @@ public class BoardController {
 		}
 		
 		String path = request.getServletContext().getRealPath("up");
-		path = "D:\\public\\green\\2023_07\\study\\spring_work\\stsMvcProj\\src\\main\\webapp\\up";
+		path = "C:\\green_project\\spring_work\\stsMvcProj\\src\\main\\webapp\\up";
 		
 		
 		int dot = dto.getMmff().getOriginalFilename().lastIndexOf(".");
@@ -170,7 +170,7 @@ public class BoardController {
 			HttpServletResponse response) {
 		
 		String path = request.getServletContext().getRealPath("up");
-		path = "D:\\public\\green\\2023_07\\study\\spring_work\\stsMvcProj\\src\\main\\webapp\\up";
+		path = "C:\\green_project\\spring_work\\stsMvcProj\\src\\main\\webapp\\up";
 		
 		
 		try {
