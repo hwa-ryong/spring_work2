@@ -1,0 +1,28 @@
+package aaa.controll;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import aaa.service.MybatisMapper;
+import jakarta.annotation.Resource;
+
+@Controller
+@RequestMapping("/mybatis")
+public class MybatisController {
+	
+	@Resource
+	MybatisMapper mapper;
+	
+	@RequestMapping("{ser}")
+	@ResponseBody
+	Object sqlGo(@PathVariable String ser) {
+		
+		System.out.println("ser:"+ser);
+		
+		Object res = mapper.list();
+		
+		return res;
+	}
+}
