@@ -1,0 +1,11 @@
+package aaa.model;
+
+import java.util.ArrayList;
+
+public class BoardDTOs {
+	ArrayList<BoardDTO> list;
+	
+	public BoardDTOs() {
+		list = new ArrayList<>();
+	}
+}

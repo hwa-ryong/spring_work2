@@ -1,0 +1,15 @@
+package aaa.model;
+
+import java.util.ArrayList;
+
+public class BoardDTOs {
+	ArrayList<BoardDTO> list;
+	
+	String content = "dtos 내용이여";
+	int cnt = 3;
+	
+	public BoardDTOs() {
+		list = new ArrayList<>();
+		list.add(new BoardDTO("dtos제목21", "dtos이름1", "1111", "dtos내용ㅇㄷㅇㄷ1"));
+	}
+}

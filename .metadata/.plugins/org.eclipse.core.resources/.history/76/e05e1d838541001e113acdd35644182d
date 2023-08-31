@@ -1,8 +1,0 @@
-package aaa;
-
-public class MyConfig {
-	
-	Battery bat1() {
-		return new Battery("로케트밧데리", 500);
-	}
-}

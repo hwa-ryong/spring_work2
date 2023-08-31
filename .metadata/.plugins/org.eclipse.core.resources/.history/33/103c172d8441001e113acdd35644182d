@@ -1,8 +1,0 @@
-package aaa.model;
-
-
-@Component
-public class Camera {
-	
-	String name = "전방카메라";
-}

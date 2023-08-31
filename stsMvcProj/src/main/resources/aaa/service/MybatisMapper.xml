@@ -9,8 +9,8 @@ PUBLIC "-//mybatis.org/DTD Mapper3.0//EN"
 		select * from board order by gid desc, seq
 	</select>
 	
-	<select id="listSch" resultType="bDTO" parameterType="bDTO">
-		select * from board 
+	
+	<sql id="wh_1">
 		<where>
 			<if test="title!=null">
 				title like concat('%', #{title} ,'%')
@@ -19,6 +19,11 @@ PUBLIC "-//mybatis.org/DTD Mapper3.0//EN"
 				and pname like concat('%', #{pname} ,'%')
 			</if>
 		</where>
+	</sql>
+	
+	<select id="listSch" resultType="bDTO" parameterType="bDTO">
+		select * from board 
+		<include refid="wh_1"/>
 	</select>
 	
 	
@@ -41,48 +46,51 @@ PUBLIC "-//mybatis.org/DTD Mapper3.0//EN"
 		</where>
 	</select>
 	
-	<select id="listCnt" resultType="Integer">
-		select count(*) from board
-	</select>
+	<sql id="max_1">
+		(select max(id)+1 from board bb)
+	</sql>
+	
+	<insert id="insseerrList" parameterType="java.util.List">
+		insert into board (title, pname, pw, content, reg_date, cnt, seq, lev, id, gid)
+		values
+		<foreach collection="list" item="dto" separator=" , " index="i">
+			(#{dto.title},#{dto.pname},#{dto.pw},#{dto.content}, sysdate(),0,0,0,
+			200+#{i}, 200+#{i})
+		</foreach>
+	</insert>
 	
 	
-	<update id="addCount" parameterType="Integer">
-		update board set cnt = cnt + 1 where id = #{id}
-	</update>
+	<insert id="insseerrDTOs" parameterType="dtos">
+		insert into board (title, pname, pw, content, reg_date, cnt, seq, lev)
+		values
+		<foreach collection="arr" item="dd" separator=" , ">
+			(#{dd.title},#{dd.pname},#{dd.pw},#{ct}, sysdate(),#{no},0,0)
+		</foreach>
+	</insert>
 	
-	<select id="detail" resultType="bDTO" parameterType="Integer">
-		select * from board where id = #{id}
-	</select>
 	
-	<select id="maxId"  resultType="Integer">
-		select max(id) from board 
-	</select>
 	
 	<insert id="insseerr" parameterType="bDTO">
+		<selectKey keyProperty="id" resultType="Integer" order="BEFORE">
+			select max(id)+1 from board
+		</selectKey>
+	
 		insert into board (title, pname, pw, content, upfile, reg_date, cnt, seq, lev, gid, id)
 		values
-		(#{title},#{pname},#{pw},#{content},#{upfile}, sysdate(),0,0,0, #{id}, #{id})
+		(#{title},#{pname},#{pw},#{content},#{upfile}, sysdate(),0,0,0, #{id},#{id})
 	</insert>
 
-	<delete id="delettt" parameterType="bDTO">
+<!-- 여러개의 매개변수를 처리시 xml 에서는 매개변수 이름으로 접근 id, pw -->
+	<delete id="delettt" >
 		delete from board where id = #{id} and pw = #{pw}
 	</delete>
 	
-	
-	<update id="modifffy" parameterType="bDTO">
+	<!--  -->
+	<update id="modifffy" parameterType="map">
 		update board set 
-		pname = #{pname}, content= #{content}, title= #{title}, upfile = #{upfile}
+		pname = #{pname}, content= #{content}, title= #{title}
 		where id = #{id} and pw= #{pw}
 	</update>
 	
-	
-	
-	<update id="fileDelete" parameterType="bDTO">
-		update board set upfile = null where id = #{id} and pw= #{pw}
-	</update>
-	
-	<select id="idPwChk" parameterType="bDTO" resultType="Integer">
-		select count(*) from board where id = #{id} and pw= #{pw}
-	</select>
 
 </mapper>

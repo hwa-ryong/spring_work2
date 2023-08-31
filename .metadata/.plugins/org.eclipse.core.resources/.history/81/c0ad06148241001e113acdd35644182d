@@ -1,9 +1,0 @@
-package aaa.controll;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-@RequestMapping("model")
-public class ModelController {
-	
-}
